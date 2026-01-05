@@ -48,7 +48,7 @@ pip install yacs loguru einops timm==0.4.12 imageio
 
 The training datasets of the initial version ABDA-Flow contain daytime and nighttime components of [KITTI](https://www.cvlibs.net/datasets/kitti/) datasets and [DSEC](https://dsec.ifi.uzh.ch/) datasets. As for the extended version STDA-Flow, we build an optical coaxial device to self-collect pixel-aligned frame images and event streams, and construct a nighttime frame-event datasets with optical flow GTs. In the future, we will release the full training datasets.
 
-![block](assets\figure_4.png)
+![block](assets/figure_4.png)
 
 ## Testing
 

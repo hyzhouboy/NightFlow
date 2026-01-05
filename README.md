@@ -1,8 +1,8 @@
 # Nighttime Scene Optical Flow: Common Spatio-Temporal Motion Adaptation
 
-## 
+## ICLR 2024, Spotlight
 
-### [ICLR 2024, Spotlight](https://openreview.net/pdf?id=776lhoaulC) | [arXiv](https://arxiv.org/pdf/2401.17642)
+### [ICLR 2024 Version](https://openreview.net/pdf?id=776lhoaulC) | [arXiv](https://arxiv.org/pdf/2401.17642)
 
 [Hanyu Zhou](https://hyzhouboy.github.io/) $^{1}$, [Haonan Wang](https://scholar.google.com/citations?user=DadbHdAAAAAJ&hl=zh-CN) $^{1}$, [Haoyue Liu](https://scholar.google.com/citations?user=DadbHdAAAAAJ&hl=zh-CN) $^{1}$, [Wending Yan](https://scholar.google.com/citations?hl=en&user=VoFRbrQAAAAJ&view_op=list_works&sortby=pubdate) $^{2}$, [Zhiwei Shi](https://scholar.google.com/citations?user=lgiDifUAAAAJ&hl=zh-CN) $^{1}$, [Luxin Yan](https://scholar.google.com/citations?user=5CS6T8AAAAAJ&hl=en) $^{1}$
 
@@ -10,17 +10,17 @@ $^1$ Huazhong University of Science and Technology
 
 $^2$ Huawei International Co. Ltd.
 
-![block](assets\figure_1.png)
+![block](assets/figure_1.png)
 
 ⭐**Our NightFlow framework can make optical flow models perform well on various nighttime degradations.**
 
-![block](assets\figure_2.png)
+![block](assets/figure_2.png)
 
 ⭐Different visual and motion adaptation approaches that are limited by the large domain gap, **our NightFlow method is a common adaptation framework, which has two versions: ABDA-Flow and STDA-Flow**. The **ABDA-Flow** is a initial version accepted by ***ICLR 2024,*** which focuses on low-light and noise degradations in nighttime scenes. The **STDA-Flow** is a extended version on submission, which further enhances the optical flow model on different nighttime degradations, such as low-light, over-saturation, noise and motion blur.
 
 ## Framework
 
-![block](assets\figure_3.png)
+![block](assets/figure_3.png)
 
 This is the extended version STDA-Flow of our common adaptation framework NightFlow, which consists of two components: daytime-nighttime motion adaptation (DNMA) and event-frame motion adpatation (EFMA). The DNMA builds common reflectance space, and *consistently* transfers spatial appearance knowledge of the motion from daytime domain to nighttime domain. The EFMA builds common gradient and kernel spaces, and *contrastively* transfers spatial boundary knowledge and temporal trajectory knowledge of the motion from event domain to nighttime frame domain. 
 
